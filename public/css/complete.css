@@ -1,0 +1,190 @@
+/* General styles for all screen sizes */
+.styled-select {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: Quicksand, sans-serif;
+    font-weight: 400;
+    border: 2px solid var(--dl-color-default-main);
+    border-radius: 8px;
+    background-color: var(--dl-color-default-background);
+    color: var(--dl-color-default-main);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.styled-select:focus {
+    border-color: var(--dl-color-default-main-hover);
+}
+
+.styled-select option {
+    padding: 10px;
+    font-size: 16px;
+    font-family: Quicksand, sans-serif;
+    color: var(--dl-color-default-main);
+    background-color: var(--dl-color-default-background);
+}
+
+/* Flexbox container for plans */
+.plans-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Individual plan box */
+.plan-title {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--dl-color-default-main);
+}
+
+.plan-sub-subtitle {
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #006400; /* Verde oscuro */
+}
+
+.plan-subtitle, .plan-description {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #286046; /* Verde claro */
+}
+
+.plan-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.plan-features li {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.plan-features li::before {
+    content: "✓";
+    color: var(--dl-color-default-main);
+    margin-right: 10px;
+}
+
+.plan-action {
+    margin-top: 20px;
+}
+
+.plan-action button {
+    background-color: var(--dl-color-default-main);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.plan-action button:hover {
+    background-color: var(--dl-color-default-main-hover);
+}
+
+.plan-box {
+    border: 2px solid var(--dl-color-default-main);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: calc(25% - 40px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #F8FAF6;
+}
+
+.plan-box:hover {
+    transform: translateY(-10px);
+}
+
+/* Styles for recommended plan */
+.plan-recommended {
+    position: relative;
+    border: 2px solid #006400; /* Borde verde oscuro */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: calc(20% - 40px); /* Ajustar el ancho según el margen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.plan-recommended::before {
+    content: 'Recomendado para ti';
+    font-size: 15px;
+    position: absolute;
+    top: 0px; /* Ajusta el espacio hacia abajo desde el borde superior del contenedor */
+    left: 0; /* Posiciona el elemento al inicio (izquierda) del contenedor */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    background-color: #5C937B;
+    color: white;
+    padding: 20px 10px; /* Aumenta el espacio interior (padding) */
+    border-radius: 0; /* Elimina los bordes redondeados */
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center;
+}
+
+.plan-box.plan-recommended {
+    border: 20px solid #5C937B;
+    position: relative;
+    padding-top: 40px;
+}
+
+.plan-recommended-label {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #5C937B;
+    color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 0 0 8px 8px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .plan-box, .plan-recommended {
+        width: calc(33.33% - 40px); /* 3 plans per row */
+    }
+}
+
+@media (max-width: 992px) {
+    .plan-box, .plan-recommended {
+        width: calc(50% - 40px); /* 2 plans per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .plan-box, .plan-recommended {
+        width: calc(100% - 40px); /* 1 plan per row */
+    }
+
+    .plan-title, .plan-sub-subtitle, .plan-subtitle, .plan-description, .plan-features li {
+        font-size: 14px; /* Reduce font size for smaller screens */
+    }
+
+    .plan-action button {
+        padding: 8px 16px; /* Reduce padding for smaller screens */
+    }
+}

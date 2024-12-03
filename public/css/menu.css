@@ -1,0 +1,197 @@
+/* Estilos generales */
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    background-color: #F2F4EA;
+    position: relative;
+}
+
+.top-line {
+    width: 100%;
+    background-color: #5c937b;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.top-line p {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.landing-logo3111 {
+    max-width: 200px;
+    display: block;
+}
+
+.menu-buttons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-button,
+.special-button {
+    background-color: transparent;
+    color: #5C937B;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 30px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin: 5px;
+}
+
+.menu-button:hover,
+.special-button:hover {
+    color: #4A7F66;
+    background-color: #F2F4EA;
+    border-color: #4A7F66;
+}
+
+.menu-select {
+    background-color: transparent;
+    color: #5C937B;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 30px 10px 10px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.menu-select:hover {
+    color: #4A7F66;
+    font-weight: bold;
+}
+
+.select-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.select-wrapper::after {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #5C937B;
+    pointer-events: none;
+}
+
+.menu-select:hover + .select-wrapper::after {
+    border-top-color: #4A7F66;
+}
+
+.special-button {
+    border-radius: 20px;
+    background-color: #5C937B;
+    color: #F2F4EA;
+    border: 2px solid #5C937B;
+}
+
+.divider {
+    width: 80%;
+    height: 1px;
+    background-color: #5C937B;
+    margin: 20px auto; /* Añade un margen para asegurarse de que el divider esté centrado */
+    position: relative; /* Mantén el position relative */
+}
+
+/* Estilos responsivos */
+
+@media (max-width: 1024px) {
+    .header-container {
+        padding: 10px 20px;
+    }
+
+    .menu-buttons {
+        justify-content: center;
+    }
+
+    .menu-button,
+    .special-button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .menu-select {
+        padding: 10px 20px 10px 10px;
+        font-size: 16px;
+    }
+
+    .divider {
+        width: 90%;
+        margin: 20px auto;
+    }
+}
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .menu-buttons {
+        margin-top: 0; /* Elimina el margen superior del contenedor */
+        flex-direction: column;
+        gap: 0; /* Elimina cualquier espacio entre los elementos si es compatible */
+        align-items: center; /* Asegura que los botones estén centrados */
+    }
+    
+    /* Si los elementos hijos tienen márgenes, ajustarlos a 0 */
+    .menu-buttons > * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu-button,
+    .special-button {
+        padding: 0;
+        font-size: 14px;
+        margin: 5px 0;
+
+    }
+
+    .menu-select {
+        padding: 5px;
+        font-size: 14px;
+        margin: 5px 0;
+    }
+
+    .divider {
+        width: 95%;
+        margin: 20px auto; /* Asegura que el divider esté centrado y visible */
+    }
+}

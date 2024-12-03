@@ -1,0 +1,64 @@
+
+        /*      //Selecciona lista de misiones y su respectiva categoria
+        $listado_misiones = ListadoMision::join('planes_categorias', 'planes_categorias.id', '=', 'listado_misiones.categoria_id')
+            ->join('tipo_periodos', 'tipo_periodos.id', '=', 'listado_misiones.periodo_id')
+            ->select(
+                'listado_misiones.id',
+                'listado_misiones.icono',
+                'listado_misiones.codigo',
+                'listado_misiones.nombre',
+                'listado_misiones.descripcion',
+                'listado_misiones.puntos',
+                'listado_misiones.categoria_id',
+                'planes_categorias.nombre AS categoria_nombre',
+                'tipo_periodos.nombre AS periodo_nombre'
+            )
+            ->orderBy('listado_misiones.categoria_id', 'asc')->get()->toArray();
+
+        if($plan_personalizado['response'] == true){ //Significa que hizo el plan inicial
+            $plan_user = PlanesPersonalizado::create([
+                'user_id' => $user,
+                'fecha_inicio' => $fecha_actual,
+                'fecha_fin' => Carbon::parse($fecha_actual)->addDays(90),
+                'vigente' => '1',
+                'por_progreso' => '0',
+                'contador_dias' => '1',
+                'json_misiones_dimensiones' => $json_plan_personalizado //Llamar la funcion que construye el JSON para el listado de misiones segun sus dimensiones
+            ]);
+            //Se guardan las misiones
+            for ($i=0; $i < count($plan_personalizado['misiones']) ; $i++) { 
+                //Verificar si la mision es de una semana o un mes y dependiendo de eso se le hace la fecha fin
+                if($plan_personalizado['misiones'][$i]['periodo_id'] == 2 ){ //Semanal
+                    $fecha_fin = Carbon::parse($fecha_actual)->addDays(8);
+                } else if($plan_personalizado['misiones'][$i]['periodo_id'] == 3 ) { //Mensual
+                    $fecha_fin = Carbon::parse($fecha_actual)->addDays(30);
+                }
+                PlanesMision::create([
+                    'plan_personalizado_id' => $plan_user->id, 
+                    'reto_id' => $plan_personalizado['misiones'][$i]['mision_id'], //REVISAR SI SEGUIMOS CON EL RETO EN LA BD OJO
+                    'completado' => 0,
+                    'fecha_inicio' => $fecha_actual,
+                    'fecha_fin' => $fecha_fin,
+                    'habilitado' => 1,
+                    'vigente' => 1
+                ]);
+            }
+            //Se guardan las submisiones
+            for ($i=0; $i < count($plan_personalizado['misiones']); $i++) { 
+                //Por cada misión extraer las submisiones
+                $mision_id = $plan_personalizado['misiones'][$i]['mision_id'];
+                $submisiones = ListadoSubmision::where('mision_id', '=', $mision_id)->get()->toArray();
+                //Por cada extracción hacer el registro de las 4 submisiones que tiene esa misión
+                for ($i=0; $i <count($submisiones); $i++) { 
+                    PlanesSubmision::create([
+                        'plan_mision_id' => $mision_id, 
+                        'submision_id' => $submisiones[$i]['id'],
+                        'periodo_id' => 0, //REVISAR SI ES NECESARIO TENER EL PERIODO AQUI.
+                        'nivel' => $submisiones[$i]['nivel'], //ES NECESARIO O NO
+                        'completado' => 0
+                    ]);
+                }
+            }
+        }   
+        */
+        dd("Ok");

@@ -1,0 +1,242 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #F2F4EA; /* Añadido el color de fondo */
+    position: relative; /* Añadido para posicionar el logo de forma absoluta */
+}
+
+.logo-container {
+    position: absolute;
+    top: 20px; /* Ajusta según sea necesario */
+    left: 20px; /* Ajusta según sea necesario */
+}
+
+.landing-logo3111 {
+    max-width: 150px; /* Ajusta el tamaño máximo de la imagen */
+    display: block;
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+.landing-container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    background-color: #F2F4EA; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: none; /* Elimina la sombra */
+}
+
+.landing-landing {
+    text-align: center;
+}
+
+.landing-vector {
+    margin-right: 10px; /* Ajusta el espacio entre la imagen y el texto */
+}
+
+.landing-find a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.landing-frameiconclock img {
+    width: 24px;
+    height: 24px;
+}
+
+.landing-text, .landing-text06, .landing-text11, .landing_text_question {
+    margin: 20px 0;
+}
+
+.landing-text06 {
+    font-weight: bold;
+}
+
+.landing-text11 {
+    font-size: 18px; /* Tamaño del texto */
+    color: #5C937B; /* Color del texto */
+    font-family: 'Quicksand', sans-serif; /* Estilo de letra Quicksand */
+    font-weight: 450; /* Texto en negrita con intensidad reducida */
+    line-height: 1.0; /* Ajuste del espacio entre renglones */
+}
+
+.landing-text {
+    font-size: 80px; /* Tamaño del texto */
+    color: #5C937B; /* Color del texto */
+    font-family: 'Quicksand', sans-serif; /* Estilo de letra Quicksand */
+    font-weight: 550; /* Texto en negrita con intensidad reducida */
+    line-height: 1.0; /* Ajuste del espacio entre renglones */
+}
+
+.landing_text_question {
+    font-size: 60px; /* Tamaño del texto */
+    color: #5C937B; /* Color del texto */
+    font-family: 'Quicksand', sans-serif; /* Estilo de letra Quicksand */
+    font-weight: 550; /* Texto en negrita con intensidad reducida */
+    line-height: 1.0; /* Ajuste del espacio entre renglones */
+}
+
+.landing-text_intro_question {
+    font-size: 20px; /* Tamaño del texto */
+    color: #5C937B; /* Color del texto */
+    font-family: 'Quicksand', sans-serif; /* Estilo de letra Quicksand */
+    font-weight: 450; /* Texto en negrita con intensidad reducida */
+    line-height: 1.0; /* Ajuste del espacio entre renglones */
+}
+
+.landing-text07 {
+    font-size: 20px; /* Tamaño del texto */
+    color: #5C937B; /* Color del texto */
+    font-family: 'Quicksand', sans-serif; /* Estilo de letra Quicksand */
+    font-weight: 550; /* Texto en negrita con intensidad reducida */
+    line-height: 1.0; /* Ajuste del espacio entre renglones */
+}
+
+.landing-text12 {
+    font-size: 20px; /* Tamaño del texto */
+    color: #5C937B; /* Color del texto */
+    font-family: 'Quicksand', sans-serif; /* Estilo de letra Quicksand */
+    font-weight: 450; /* Texto en negrita con intensidad reducida */
+    line-height: 1.0; /* Ajuste del espacio entre renglones */
+}
+
+.btn.btn-primary {
+    font-size: 18px; /* Tamaño del texto */
+    border-radius: 60px; /* Hace que el botón sea redondo */
+    background-color: #5C937B; /* Color de fondo del botón */
+    color: white; /* Color de texto del botón */
+    border: none; /* Elimina el borde del botón */
+    padding: 12px 40px; /* Ajusta el espacio interno del botón */
+    text-decoration: none; /* Elimina el subrayado del texto */
+    display: inline-block; /* Hace que el botón se comporte como un bloque en línea */
+    font-weight: 600; /* Ajusta la intensidad de la negrilla */
+    font-family: 'Quicksand', sans-serif; /* Estilo de letra Quicksand */
+}
+
+.btn.btn-primary:hover {
+    background-color: #4A7F66; /* Cambia el color de fondo al pasar el mouse sobre el botón */
+}
+
+/* Estilo para el select */
+.select-container {
+    position: relative;
+    display: inline-block; /* Para que el contenedor ocupe solo el espacio necesario */
+}
+
+.select-container i {
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Puedes ajustar este valor según sea necesario */
+    transform: translateY(-50%);
+    color: #555; /* Color del icono */
+}
+.styled-select {
+    color: #5C937B; /* Color de la fuente verde */
+    background-color: transparent; /* Fondo transparente */
+    border: none; /* Elimina el borde */
+    border-bottom: 1px solid #5C937B; /* Línea de subrayado */
+    padding-right: 30px; /* Espacio para el icono */
+    appearance: none; /* Elimina la apariencia predeterminada del select */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative; /* Agrega posición relativa para alinear la línea */
+    text-align: center; /* Centra el texto horizontalmente */
+    font-size: 30px; /* Tamaño de la letra */
+    font-family: 'Quicksand', sans-serif; /* Estilo de letra Quicksand */
+    justify-content: center;
+
+}
+
+/* Estilo para la flecha del select */
+.styled-select::after {
+    content: '\f078'; /* Código Unicode del icono de flecha hacia abajo en Font Awesome */
+    font-family: 'Font Awesome 5 Free'; /* Familia de fuente de Font Awesome */
+    font-weight: 900; /* Peso de la fuente para asegurar que se muestre correctamente */
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Alineación del icono a la derecha */
+    transform: translateY(-50%);
+    pointer-events: none; /* Evita que la flecha sea clickeable */
+    color: #5C937B; /* Color de la flecha */
+    
+}
+
+/* Estilos combobox*/
+.custom-combobox {
+    text-align: center;
+}
+
+.styled-options {
+    display: inline-block;
+    text-align: left; /* Alineación del texto */
+}
+
+.styled-option {
+    display: block;
+    padding: 20px 55px;
+    margin: 20px auto; /* Margen superior e inferior auto para centrar */
+    background-color: #C7DDCF; /* Fondo verde más claro */
+    color: #3d3d3d; /* Letra negra */
+    border: 1px solid #3d3d3d; /* Borde negro */
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+    font-size: 20px; /* Tamaño de la letra */
+    font-family: 'Quicksand', sans-serif; /* Estilo de letra Quicksand */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+.styled-option:hover {
+    background-color: #A9D8C6; /* Fondo más claro al pasar el ratón */
+}
+
+.styled-option.active {
+    background-color: #7BB39C; /* Fondo oscurecido al hacer clic */
+}
+
+/* Estilo personalizado para el select de Select2 */
+.select-container .select2-container .select2-selection {
+    background-color: #F2F4EA !important; /* Color de fondo del select */
+    border: none !important; /* Eliminar el borde */
+    font-family: 'Quicksand', sans-serif !important; /* Estilo de la fuente */
+    font-size: 30px !important; /* Tamaño de la fuente */
+    color: #5C937B !important; /* Color del texto verde */
+}
+
+/* Estilo para la flecha del select de Select2 */
+.select-container .select2-container .select2-selection__arrow {
+    color: #F2F4EA !important; /* Color de la flecha */
+}
+
+/* Estilo para el menú desplegable del select de Select2 */
+.select2-container .select2-dropdown {
+    background-color: #F2F4EA !important; /* Fondo con el color deseado */
+    border: none !important; /* Eliminar el borde */
+    box-shadow: none !important; /* Eliminar cualquier sombra */
+}
+
+/* Estilo para las opciones del menú desplegable */
+.select2-container .select2-results__option {
+    background-color: #F2F4EA !important; /* Fondo con el color deseado */
+    color: #3d3d3d !important; /* Color del texto de las opciones */
+}
+
+.select2-container .select2-results__option--highlighted {
+    background-color: rgba(123, 179, 156, 0.5) !important; /* Fondo más oscuro al resaltar */
+}
+
+/* Estilo para el texto seleccionado */
+.select-container .select2-container .select2-selection__rendered {
+    color: #5C937B !important; /* Color del texto del elemento seleccionado */
+}

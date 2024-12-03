@@ -1,0 +1,126 @@
+.landing-container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    background-color: #F2F4EA; 
+    border-radius: 8px;
+    box-shadow: none; /* Elimina la sombra */
+}
+
+.landing-landing {
+    text-align: center;
+}
+
+.landing-text, .landing-text06 {
+    margin: 20px 0;
+}
+
+.landing-text {
+    font-size: 80px; /* Tamaño del texto */
+    color: #5C937B; /* Color del texto */
+    font-family: 'Quicksand', sans-serif; /* Estilo de letra Quicksand */
+    font-weight: 550; /* Texto en negrita con intensidad reducida */
+    line-height: 1.0; /* Ajuste del espacio entre renglones */
+}
+
+.landing-text06 {
+    font-weight: bold;
+}
+
+.landing-text07 {
+    font-size: 20px; /* Tamaño del texto */
+    color: #5C937B; /* Color del texto */
+    font-family: 'Quicksand', sans-serif; /* Estilo de letra Quicksand */
+    font-weight: 550; /* Texto en negrita con intensidad reducida */
+    line-height: 1.0; /* Ajuste del espacio entre renglones */
+}
+
+/* New Blog Section Styles */
+.blog-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+
+.small-blog-box {
+    padding: 20px;
+    background-color: #F2F4EA;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.large-blog-box {
+    padding: 20px;
+    background-color: #F2F4EA;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+
+.large-blog-box img {
+    width: 70%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.small-blog-box img {
+    width: 40%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.large-blog-box h2 {
+    font-size: 30px;
+    color: #5C937B;
+    margin: 10px 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.small-blog-box h2 {
+    font-size: 30px;
+    color: #5C937B;
+    margin: 10px 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.blog-description {
+    font-size: 17px;
+    color: #5C937B;
+    margin: 10px 0;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600; /* Aumenta el grosor del texto */
+}
+
+.btn.btn-primary {
+    font-size: 18px; /* Tamaño del texto */
+    border-radius: 60px; /* Hace que el botón sea redondo */
+    background-color: #5C937B; /* Color de fondo del botón */
+    color: white; /* Color de texto del botón */
+    border: none; /* Elimina el borde del botón */
+    padding: 12px 40px; /* Ajusta el espacio interno del botón */
+    text-decoration: none; /* Elimina el subrayado del texto */
+    display: inline-block; /* Hace que el botón se comporte como un bloque en línea */
+    font-weight: 600; /* Ajusta la intensidad de la negrilla */
+    font-family: 'Quicksand', sans-serif; /* Estilo de letra Quicksand */
+}
+
+.btn.btn-primary:hover {
+    background-color: #4A7F66; /* Cambia el color de fondo al pasar el mouse sobre el botón */
+}
+
+.small-blog-boxes {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.small-blog-box {
+    width: 100%;
+    margin-top: 20px; /* Separación entre los cuadros pequeños */
+}
+
+

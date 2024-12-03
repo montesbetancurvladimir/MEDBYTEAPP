@@ -1,0 +1,295 @@
+.message-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0;
+    box-sizing: border-box;
+    margin-top: 0px; /* Reducir el espacio en blanco */
+    position: relative; /* Agrega posición relativa al contenedor del mensaje */
+}
+
+.text-container {
+    flex: 1;
+    text-align: left;
+    padding-left: 200px; /* Ajusta el espacio para que empiece donde el logo */
+    box-sizing: border-box;
+}
+
+.message-text {
+    font-size: 72px; /* Tamaño de la fuente más grande */
+    color: #5C937B;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1; /* Ajusta el espacio entre renglones */
+}
+
+.message-text-small {
+    font-size: 22px; /* Tamaño de la fuente igual al de los botones */
+    color: #5C937B; /* Mismo color que los botones */
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400; /* Puedes ajustar la intensidad de la fuente según lo necesites */
+    margin: 0;
+}
+
+.image-container-scribble {
+    padding-left: 0; /* Asegúrate de que no haya padding en el contenedor */
+    margin-left: 0; /* Asegúrate de que no haya margen en el contenedor */
+}
+
+.image-scribble img {
+    margin-left: -250px; /* Ajusta el valor según sea necesario */
+}
+
+.image-group {
+    display: flex;
+    align-items: flex-start; /* Alinea las imágenes al inicio superior del contenedor */
+    justify-content: center;
+    flex-direction: column; /* Coloca las imágenes en una columna */
+    padding-right: 200px; /* Ajusta el espacio según sea necesario */
+}
+
+.image-empresas {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px; /* Espaciado entre las imágenes */
+}
+
+.side-image {
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin-top: -50px; /* Ajusta este valor para subir la imagen */
+}
+
+.container_empresas_pag2 {
+    background-color: #F2F4EA;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0;
+    padding: 20px; /* Añade padding al contenedor */
+    box-sizing: border-box;
+}
+
+.text-container_empresas {
+    max-width: 1200px; /* Ancho máximo de las columnas */
+    width: 100%;
+    text-align: left; /* Centra el texto */
+    margin: 20px 0; /* Añade margen superior e inferior */
+}
+
+.message-text-empresas {
+    font-size: 72px; /* Tamaño de la fuente más grande */
+    color: #5C937B;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1; /* Ajusta el espacio entre renglones */
+    padding-left: 180px; /* Relleno a la izquierda */
+    padding-top: 20px; /* Relleno arriba */
+}
+
+
+.custom-table-container {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Centra la tabla horizontalmente */
+}
+
+.custom-table {
+    width: 80%; /* Ajusta este valor según el tamaño deseado */
+    border-collapse: collapse;
+}
+
+.custom-table tr {
+    border-bottom: 2px solid #5C937B; /* Color de la línea verde y más gruesa */
+}
+
+.custom-table td {
+    padding: 12px 8px; /* Padding adicional arriba y abajo */
+    padding-left: 20px; /* Padding adicional a la izquierda */
+    padding-right: 20px; /* Padding adicional a la derecha */
+    text-align: left;
+    color: #5C937B; /* Color del texto verde */
+}
+
+.custom-table .number {
+    width: 10%;
+    font-size: 36px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.custom-table .name {
+    width: 30%;
+    font-size: 36px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.custom-table .description {
+    width: 60%;
+    font-size: 26px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container_pagina3_empresas {
+    background-color: #F2F4EA;
+    font-family: 'Quicksand', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column; /* Para que las columnas aparezcan debajo del texto */
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Ajusta el padding según sea necesario */
+    padding-bottom: 40px; /* Ajusta el espacio hacia abajo según sea necesario */
+}
+
+.employee-meter {
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.employee-icon {
+    width: 100px;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.employee-title {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 0px;
+}
+.employee-title #employeeCount {
+    color: #5C937B; /* Color verde para el número 0 */
+}
+.employee-title b {
+    color: black; /* Color negro para el texto "Tus empleados" */
+}
+.employee-count {
+    color: #5C937B; /* Color verde */
+    font-weight: bold; /* Texto en negrita, ajusta según necesites */
+    font-size: 50px; /* Tamaño de fuente, ajusta según necesites */
+    font-family: 'Quicksand', sans-serif; /* Fuente, ajusta según tu preferencia */
+    padding: 0px;
+    display: block; /* Para asegurar que ocupe toda la línea */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+.slider-container {
+    width: 90vw; /* Ajusta según el ancho deseado */
+    max-width: 1000px; /* Limita el ancho máximo */
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: 20px;
+    border-radius: 10px;
+    background: #5C937B;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .15s ease-in-out;
+}
+
+.slider:hover {
+    opacity: 1;  /* Opacidad al pasar el cursor */
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;  /* Ocultar el estilo predeterminado */
+    appearance: none;  /* Ocultar el estilo predeterminado */
+    width: 20px;  /* Ancho del rectángulo */
+    height: 40px;  /* Altura del rectángulo */
+    background: #013836;  /* Color de fondo verde oscuro */
+    cursor: pointer;  /* Cambiar el cursor al pasar */
+    border-radius: 6px;  /* Bordes redondeados */
+}
+
+.slider::-moz-range-thumb {
+    width: 20px;  /* Ancho del rectángulo */
+    height: 20px;  /* Altura del rectángulo */
+    background: #006400;  /* Color de fondo verde oscuro */
+    cursor: pointer;  /* Cambiar el cursor al pasar */
+}
+
+.meter-values {
+    display: flex;
+    justify-content: center; /* Ajusta el espacio horizontal */
+    align-items: center;
+    font-size: 19px;
+    color: #5C937B;
+    width: 80%;
+    margin-top: 0px; /* Ajusta el margen superior */
+}
+
+.meter-values {
+    display: flex;
+    justify-content: space-between;
+}
+
+.medidor_item {
+    text-align: center;
+    flex: 1;
+    padding: 10px;
+}
+
+.medidor_value {
+    font-size: 24px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.medidor_text {
+    font-size: 16px;
+}
+
+.menu-button_empresa.special-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #4A8D6F;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 20px;
+}
+
+.image-container-scribble {
+    margin-top: 40px;
+}
+
+
+image-scribble_pag3 {
+    margin-top: 0;
+    display: flex;
+    align-items: flex-start; /* Cambia a flex-start para alinear al principio verticalmente */
+    justify-content: flex-start; /* Cambia a flex-start para alinear al principio horizontalmente */
+    margin-bottom: 0px; /* Espaciado entre las imágenes */
+}
+
+.image-scribble_pag3 img {
+    margin-left: -250px; /* Ajusta el valor según sea necesario */
+}
+
+
