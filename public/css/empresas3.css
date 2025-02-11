@@ -1,0 +1,224 @@
+
+.container_pagina3_empresas {
+    background-color: #F2F4EA;
+    font-family: 'Quicksand', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column; /* Para que las columnas aparezcan debajo del texto */
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Ajusta el padding según sea necesario */
+    padding-bottom: 40px; /* Ajusta el espacio hacia abajo según sea necesario */
+}
+.employee-meter {
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.employee-icon {
+    width: 100px;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+}
+
+.employee-title {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 0px;
+}
+.employee-title #employeeCount {
+    color: #5C937B; /* Color verde para el número 0 */
+}
+.employee-title b {
+    color: black; /* Color negro para el texto "Tus empleados" */
+}
+.employee-count {
+    color: #5C937B; /* Color verde */
+    font-weight: bold; /* Texto en negrita, ajusta según necesites */
+    font-size: 50px; /* Tamaño de fuente, ajusta según necesites */
+    font-family: 'Quicksand', sans-serif; /* Fuente, ajusta según tu preferencia */
+    padding: 0px;
+    display: block; /* Para asegurar que ocupe toda la línea */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+
+.slider-container {
+    width: 90vw; /* Ajusta según el ancho deseado */
+    max-width: 1000px; /* Limita el ancho máximo */
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: 20px;
+    border-radius: 10px;
+    background: #5C937B;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .15s ease-in-out;
+}
+
+.slider:hover {
+    opacity: 1;  /* Opacidad al pasar el cursor */
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;  /* Ocultar el estilo predeterminado */
+    appearance: none;  /* Ocultar el estilo predeterminado */
+    width: 20px;  /* Ancho del rectángulo */
+    height: 40px;  /* Altura del rectángulo */
+    background: #013836;  /* Color de fondo verde oscuro */
+    cursor: pointer;  /* Cambiar el cursor al pasar */
+    border-radius: 6px;  /* Bordes redondeados */
+}
+
+.slider::-moz-range-thumb {
+    width: 20px;  /* Ancho del rectángulo */
+    height: 20px;  /* Altura del rectángulo */
+    background: #006400;  /* Color de fondo verde oscuro */
+    cursor: pointer;  /* Cambiar el cursor al pasar */
+}
+
+.meter-values {
+    display: flex;
+    justify-content: center; /* Ajusta el espacio horizontal */
+    align-items: center;
+    font-size: 19px;
+    color: #5C937B;
+    width: 80%;
+    margin-top: 0px; /* Ajusta el margen superior */
+}
+
+.meter-values {
+    display: flex;
+    justify-content: space-between;
+}
+
+.medidor_item {
+    text-align: center;
+    flex: 1;
+    padding: 10px;
+    width: 70%;
+}
+
+.medidor_value {
+    font-size: 24px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.medidor_text {
+    font-size: 16px;
+}
+
+.menu-button_empresa.special-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #4A8D6F;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 20px;
+}
+
+image-scribble_pag3 {
+    margin-top: 0;
+    display: flex;
+    align-items: flex-start; /* Cambia a flex-start para alinear al principio verticalmente */
+    justify-content: flex-start; /* Cambia a flex-start para alinear al principio horizontalmente */
+    margin-bottom: 0px; /* Espaciado entre las imágenes */
+}
+
+.image-scribble_pag3 img {
+    margin-left: -250px; /* Ajusta el valor según sea necesario */
+}
+
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .container_pagina3_empresas {
+        padding: 15px; /* Reduce el padding */
+    }
+
+    .employee-title {
+        font-size: 18px; /* Ajusta el tamaño del texto */
+    }
+
+    .employee-count {
+        font-size: 32px;
+    }
+
+    .slider-container {
+        width: 70%;
+    }
+
+    .menu-button_empresa.special-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .meter-values {
+        flex-direction: column; /* Coloca los valores en una columna */
+        align-items: center;
+    }
+
+    .medidor_item {
+        padding: 8px 0;
+    }
+
+    .image-scribble_pag3 img {
+        max-width: 250px; /* Reduce el tamaño máximo */
+    }
+
+    .medidor_text {
+        font-size: 15px;
+        line-height: 1; /* Espaciado mínimo entre líneas */
+        margin: 0; /* Elimina cualquier margen aplicado al texto */
+        padding: 0; /* Elimina cualquier relleno */
+    }
+}
+
+@media (max-width: 480px) {
+    .employee-title {
+        font-size: 16px;
+    }
+
+    .employee-count {
+        font-size: 28px;
+    }
+
+    .medidor_value {
+        font-size: 18px;
+    }
+
+    .medidor_text {
+        font-size: 15px;
+        line-height: 1; /* Espaciado mínimo entre líneas */
+        margin: 0; /* Elimina cualquier margen aplicado al texto */
+        padding: 0; /* Elimina cualquier relleno */
+    }
+
+    .menu-button_empresa.special-button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .image-scribble_pag3 img {
+        width: 100%;
+        max-width: 200px;
+    }
+}

@@ -49,19 +49,24 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     text-align: center;
+    border: 2px solid #5C937B;
 }
 
 .large-blog-box {
-    padding: 20px;
+    width: 50%;
+    padding: 10px;
     background-color: #F2F4EA;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     text-align: center;
+    padding-bottom: 0px; 
+    margin-bottom: 0px;
+    border: 2px solid #5C937B;
 }
 
 
 .large-blog-box img {
-    width: 70%;
+    width: 60%;
     border-radius: 8px;
     margin-bottom: 10px;
 }
@@ -72,19 +77,13 @@
     margin-bottom: 10px;
 }
 
-.large-blog-box h2 {
-    font-size: 30px;
+.large-blog-box h2, .small-blog-box h2 {
+    font-size: 25px;
     color: #5C937B;
     margin: 10px 0;
     font-family: 'Quicksand', sans-serif;
 }
 
-.small-blog-box h2 {
-    font-size: 30px;
-    color: #5C937B;
-    margin: 10px 0;
-    font-family: 'Quicksand', sans-serif;
-}
 
 .blog-description {
     font-size: 17px;
@@ -113,6 +112,7 @@
 
 .small-blog-boxes {
     width: 35%;
+    margin: 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -120,7 +120,74 @@
 
 .small-blog-box {
     width: 100%;
-    margin-top: 20px; /* Separación entre los cuadros pequeños */
+    margin: 0px;
 }
 
 
+/* Media Queries para pantallas pequeñas (máx. 768px) */
+@media (max-width: 768px) {
+    .blog-section {
+        flex-direction: column; /* Cambia a columna para pantallas pequeñas */
+        gap: 20px; /* Espaciado uniforme entre los elementos */
+    }
+
+    .large-blog-box,
+    .small-blog-box {
+        width: 80%; /* Hace que los cuadros ocupen todo el ancho */
+    }
+
+    .large-blog-box{
+        align-items: center;
+        margin-left: 10px;
+    }
+
+    .small-blog-boxes {
+        width: 80%; /* Los cuadros pequeños también ocupan todo el ancho */
+        align-items: center;
+        margin-left:20px ;
+        margin-bottom: 10px;
+    }
+
+    .blog-description {
+        font-size: 14px;
+    }
+
+    .boton_leer{
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .landing-text07 {
+        width: 80%;
+        text-align: center;
+        align-items: center;
+        margin-left: 20px;
+    }
+
+    .small-blog-box{
+        margin-bottom: 15px;
+    }
+}
+
+/* Media Queries para pantallas muy pequeñas (máx. 480px) */
+@media (max-width: 480px) {
+    .landing-text {
+        font-size: 28px;
+        margin-right: 30px;
+    }
+
+    .blog-description {
+        font-size: 16px;
+    }
+
+    .large-blog-box img,
+    .small-blog-box img {
+        width: 60%; /* Ajusta el tamaño de las imágenes */
+    }
+
+    .btn.btn-primary {
+        font-size: 14px;
+        padding: 10px 20px; /* Reduce el relleno para botones pequeños */
+    }
+     
+}

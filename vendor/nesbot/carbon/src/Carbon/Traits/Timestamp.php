@@ -1,31 +1,9 @@
 <?php
 
-/**
- * This file is part of the Carbon package.
- *
- * (c) Brian Nesbitt <brian@nesbot.com>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
 namespace Carbon\Traits;
-
-/**
- * Trait Timestamp.
- */
 trait Timestamp
 {
-    /**
-     * Create a Carbon instance from a timestamp and set the timezone (use default one if not specified).
-     *
-     * Timestamp input can be given as int, float or a string containing one or more numbers.
-     *
-     * @param float|int|string          $timestamp
-     * @param \DateTimeZone|string|null $tz
-     *
-     * @return static
-     */
+    #[\ReturnTypeWillChange] /* ERROR CARBON  */
     public static function createFromTimestamp($timestamp, $tz = null)
     {
         return static::createFromTimestampUTC($timestamp)->setTimezone($tz);

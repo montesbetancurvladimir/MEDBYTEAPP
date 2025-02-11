@@ -1,0 +1,112 @@
+.message-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0;
+    box-sizing: border-box;
+    margin-top: 0px; /* Reducir el espacio en blanco */
+    position: relative; /* Agrega posición relativa al contenedor del mensaje */
+}
+
+.message-text {
+    font-size: 72px; /* Tamaño de la fuente más grande */
+    color: #5C937B;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1; /* Ajusta el espacio entre renglones */
+}
+
+.message-text-small {
+    font-size: 22px; /* Tamaño de la fuente igual al de los botones */
+    color: #5C937B; /* Mismo color que los botones */
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400; /* Puedes ajustar la intensidad de la fuente según lo necesites */
+    margin: 0;
+}
+.image-scribble img {
+    margin-left: -250px; /* Ajusta el valor según sea necesario */
+}
+
+.image-group {
+    display: flex;
+    align-items: flex-start; /* Alinea las imágenes al inicio superior del contenedor */
+    justify-content: center;
+    flex-direction: column; /* Coloca las imágenes en una columna */
+    padding-right: 200px; /* Ajusta el espacio según sea necesario */
+}
+.image-empresas {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px; /* Espaciado entre las imágenes */
+}
+
+.side-image {
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin-top: -50px; /* Ajusta este valor para subir la imagen */
+}
+
+@media (max-width: 768px) {
+    .message-container {
+        flex-direction: column; /* Apila los elementos verticalmente */
+        align-items: center; /* Centra los elementos */
+        padding: 0px;
+        width: 60%;
+    }
+
+    .message-text {
+        font-size: 36px; /* Reduce el tamaño de la fuente */
+        text-align: center; /* Centra el texto */
+    }
+
+    .message-text-small {
+        font-size: 18px; /* Ajusta el tamaño para pantallas pequeñas */
+        text-align: center; /* Centra el texto */
+    }
+
+    .image-scribble img {
+        display: none;
+    }
+
+    .image-container-scribble{
+        display: none;
+    }
+
+    .image-group {
+        padding-right: 0; /* Elimina el padding lateral */
+        align-items: center; /* Centra las imágenes */
+    }
+
+    .image-empresas {
+        margin-top: 40px; /* Reduce el margen superior */
+        margin-bottom: 30px; /* Reduce el margen inferior */
+        flex-direction: column; /* Apila las imágenes verticalmente */
+    }
+
+    .side-image {
+        max-width: 300px; /* Reduce el tamaño máximo de las imágenes */
+        margin-top: 0; /* Ajusta el margen superior */
+    }
+}
+
+@media (max-width: 576px) {
+    .message-text {
+        font-size: 40px;
+
+    }
+
+    .message-text-small {
+        font-size: 23px;
+        padding-bottom: 0px;
+        margin-bottom:0px ;
+    }
+
+    .side-image {
+        max-width: 300px;
+    }
+}

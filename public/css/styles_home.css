@@ -25,7 +25,6 @@ body {
 .landing-container {
     max-width: 1200px;
     width: 100%;
-    padding: 20px;
     background-color: #F2F4EA; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -93,6 +92,7 @@ body {
     font-family: 'Quicksand', sans-serif; /* Estilo de letra Quicksand */
     font-weight: 450; /* Texto en negrita con intensidad reducida */
     line-height: 1.0; /* Ajuste del espacio entre renglones */
+    width: 80%;
 }
 
 .landing-text07 {
@@ -239,4 +239,74 @@ body {
 /* Estilo para el texto seleccionado */
 .select-container .select2-container .select2-selection__rendered {
     color: #5C937B !important; /* Color del texto del elemento seleccionado */
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .logo-container {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .landing-logo3111 {
+        max-width: 100px;
+    }
+
+    .landing-container {
+        max-width: 100%;
+        box-shadow: none;
+        border-radius: 5px;
+    }
+
+    .landing-text, .landing-text06, .landing-text11, .landing_text_question {
+        font-size: 1.5rem;
+        margin: 10px 0;
+    }
+
+    .landing-text {
+        font-size: 2rem;
+    }
+
+    .landing_text_question {
+        font-size: 1.8rem;
+    }
+
+    .landing-text_intro_question, .landing-text07, .landing-text12 {
+        font-size: 1rem;
+        text-align: center;
+        width: 80%;
+    }
+
+    .btn.btn-primary {
+        font-size: 1rem;
+        padding: 10px 20px;
+        border-radius: 30px;
+    }
+
+    .styled-select {
+        font-size: 1rem;
+        padding-right: 20px;
+    }
+
+    .styled-option {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .select-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .select-container .select2-container .select2-selection {
+        font-size: 1rem;
+    }
 }

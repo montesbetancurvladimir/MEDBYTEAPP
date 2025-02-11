@@ -13,21 +13,22 @@
             <div class="landing-landing">
                 <div class="landing-menu-items"></div>
                 <span class="landing-text">
-                    <span>Nuestro blog</span>
-                    <br />
-                </span>
-                <span class="landing-text06">
-                    <span class="landing-text07">Conoce las últimas noticias en el campo de la salud con <b>MedByte</b></span>
-                </span>
-                
+                    Nuestro blog
+                </span><br>
+                <p class="landing-text07">
+                    Conoce las últimas noticias en el campo de la salud con <b>MedByte</b>
+                </p>
+
                 <!-- New Blog Section -->
                 <div class="blog-section">
+                    
                     <div class="large-blog-box">
                         <img src="{{ asset('images/blog/blog1.png') }}" alt="Imagen del Blog">
                         <h2>¿Por qué análisis de datos para mi entidad de salud?</h2>
                         <p class="blog-description">Descubre cómo el análisis de datos puede transformar tu entidad de salud.</p>
-                        <button class="btn btn-primary">Leer más</button>
+                        <button class="boton_leer btn btn-primary">Leer más</button>
                     </div>
+
                     <div class="small-blog-boxes">
                         <div class="small-blog-box">
                             <img src="{{ asset('images/blog/blog2.png') }}" alt="Imagen del Blog">

@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
-    <link rel="stylesheet" href="{{ asset('css/complete.css') }}">
-
     <style data-tag="reset-style-sheet">
         html { line-height: 1.15; }
         body { margin: 0; }
@@ -40,16 +38,17 @@
             fill: var(--dl-color-theme-neutral-dark);
         }
     </style>
+
     <link rel="stylesheet" href="https://unpkg.com/animate.css@4.1.1/animate.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" data-tag="font" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" data-tag="font" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" data-tag="font" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" data-tag="font" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" data-tag="font" />
-    <!-- Add more font styles if needed -->
+    
     <!-- External stylesheets -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
-    <link rel="stylesheet" href="{{ asset('css/landing1.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/complete.css') }}">
 </head>
 <body>
     <div class="landing1-container">

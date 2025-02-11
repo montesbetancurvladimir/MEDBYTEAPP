@@ -11,6 +11,8 @@ use App\Models\Pais;
 use App\Models\User;
 use App\Models\Plan;
 use App\Models\CountryResponse;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\NotificacionCorreo;
 
 //Encriptador de la contraseña
 use Illuminate\Support\Facades\Hash;
@@ -149,7 +151,9 @@ class SurveyController extends Controller
             if($recommendedPlan['individual'] == null){
                 //Va por el camino de empresas
                 $PlanRecomendado = $recommendedPlan['empresa'];
-                return view('survey.complete_empresa')->with('PlanRecomendado', $PlanRecomendado);
+                // Llamar la función para enviar el correo
+                $this->enviarCorreo();
+                return redirect('/')->with('mensaje', 'pop_up_test');
             }else{
                 //Traer los planes.
                 $planes = Plan::where('tipo', '=', 'individual')->get();
@@ -166,13 +170,13 @@ class SurveyController extends Controller
                 }
                 $nombre_a_eliminar = $eliminar_plan['plan_eliminar'];
                 $planes_actualizados = eliminar_plan_del_arreglo($planes, $nombre_a_eliminar);
-                return view('survey.complete_individual',compact('PlanRecomendado','planes_actualizados'));
+                return redirect('/')->with('mensaje', 'pop_up_test');
             }
         }else{
             // Valida que se tenga la pregunta para luego enviarla a la vista, sino se terminó y lo dirige a la vista de completado.
             return $question
             ? view('survey.survey', compact('question', 'tipo_pregunta'))
-            : redirect()->route('survey.complete_individual');
+            : redirect('/')->with('mensaje', 'pop_up_test');
         }
     }
 
@@ -192,6 +196,18 @@ class SurveyController extends Controller
     public function inicio(){
         // Aquí puedes agregar lógica adicional para determinar la página final
         return view('home');
+    }
+
+    //Al completar la ùltima pregunta del correo, manda un email
+    public function enviarCorreo(){
+        $correo = OpenResponse::orderBy('id', 'desc')->first();
+        $correo_nuevo = $correo->response;
+        $destinatario1 = "info@medbyte.ai";  //info@medbyte.ai
+        $destinatario2 = "vladimirmontes192@hotmail.com"; 
+        $mensaje = "Este es un correo de prueba.";
+        Mail::to($destinatario1)
+            ->cc($destinatario2) //Copia
+            ->send(new NotificacionCorreo($mensaje, $correo_nuevo));
     }
 
 }

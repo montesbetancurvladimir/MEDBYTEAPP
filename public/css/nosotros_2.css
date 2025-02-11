@@ -1,0 +1,162 @@
+
+.container_pagina2 {
+    background-color: #5C937B;
+    height: 100vh; /* Ocupar toda la altura de la ventana de visualización */
+    width: 100vw; /* Ocupar todo el ancho de la ventana de visualización */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; /* Elimina cualquier margen que pueda estar presente */
+    padding: 0; /* Elimina cualquier relleno que pueda estar presente */
+    box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el tamaño total */
+}
+
+.container_pagina2 {
+    background-color: #5C937B;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column; /* Para que las columnas aparezcan debajo del texto */
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Ajusta el padding según sea necesario */
+}
+
+.text-container_nosotros {
+    max-width: 1200px; /* Ancho máximo de las columnas */
+    width: 100%;
+    text-align: left; /* Centra el texto */
+}
+
+.text-container_nosotros {
+    flex: 1;
+    padding-left: 100px; /* Ajusta el espacio para que empiece donde el logo */
+    box-sizing: border-box;
+}
+
+.message-text-nosotros {
+    font-size: 72px; /* Tamaño de la fuente más grande */
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1; /* Ajusta el espacio entre renglones */
+    padding-left: 180px; /* Relleno a la izquierda */
+    padding-top: 20px; /* Relleno arriba */
+}
+
+.columns-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.columns-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 0px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.columns-container .line {
+    width: 100%; /* Asegura que las líneas se extiendan completamente */
+    height: 2px;
+    background-color: #ffffff;
+    margin-top: auto; /* Mueve la línea al final del contenedor */
+}
+.column {
+    width: 30%;
+}
+
+
+.column {
+    flex: 1; /* Hace que todas las columnas tengan la misma altura */
+    padding: 25px;
+    background-color: #5C937B;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.column h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.column p {
+    font-size: 25px;
+    margin-bottom: 40px; /* Ajusta el margen inferior para el texto */
+    display: flex;
+    flex-grow: 1; /* Permitir que los elementos se expandan */
+    flex-shrink: 0; /* Evitar que los elementos se hagan más pequeños */
+    flex-basis: 0; /* Permitir que los elementos se expandan */
+}
+
+/* Estilos específicos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .container_pagina2 {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .message-text-nosotros {
+        margin-top: 0px;
+        font-size: 40px; /* Reducir el tamaño de la fuente */
+        padding-left: 20px; /* Reducir el relleno a la izquierda */
+        padding-top: 0px; /* Reducir el relleno arriba */
+        border: 0px;
+    }
+
+    .text-container_nosotros {
+        padding-left: 0; /* Eliminar relleno izquierdo en pantallas pequeñas */
+        text-align: center; /* Centrar el texto */
+    }
+
+    .columns-container {
+        flex-direction: column; /* Apilar las columnas en pantallas pequeñas */
+        align-items: center; /* Centrar las columnas */
+        justify-content: center;
+    }
+
+    .column {
+        width: 85%; /* Hacer que las columnas ocupen todo el ancho disponible */
+        padding: 0px; /* Reducir el padding */
+        margin: 0px;
+    }
+
+    .column h2 {
+        font-size: 30px; /* Reducir el tamaño de la fuente */
+    }
+
+    .column p {
+        font-size: 18px; /* Reducir el tamaño del texto */
+    }
+
+
+    .line {
+        margin: 20px;
+        padding: 0px;
+        width: 100%; /* Ajusta el ancho de la línea según el porcentaje deseado */
+    }
+
+    .titulo_n2{
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+    }
+}
+
+/* Estilos para pantallas aún más pequeñas (por ejemplo, móviles) */
+@media (max-width: 480px) {
+    .message-text-nosotros {
+        font-size: 32px; /* Reducir aún más el tamaño de la fuente */
+    }
+
+    .column h2 {
+        font-size: 24px; /* Reducir el tamaño del título */
+    }
+
+    .column p {
+        font-size: 16px; /* Reducir el tamaño del párrafo */
+    }
+}
