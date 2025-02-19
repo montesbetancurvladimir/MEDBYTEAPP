@@ -22,4 +22,13 @@ class PageController extends Controller
         return view('prensa');
     }
 
+    public function inicio(){
+        // Obtener el mensaje de la sesión
+        $mensaje = session('mensaje');
+        // Eliminar el mensaje después de usarlo
+        session()->forget('mensaje');
+        // Pasar el mensaje a la vista
+        return view('inicio', compact('mensaje'));
+    }
+
 }

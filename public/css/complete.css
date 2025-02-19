@@ -21,6 +21,28 @@
     border-color: var(--dl-color-default-main-hover);
 }
 
+.landing1-container {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--dl-color-default-background);
+  }
+  
+  .landing1-landing {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dl-color-default-background);
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
 .styled-select option {
     padding: 10px;
     font-size: 16px;
@@ -92,7 +114,7 @@
 }
 
 .plan-action button:hover {
-    background-color: var(--dl-color-default-main-hover);
+    background-color: var(--dl-color-default-main);
 }
 
 .plan-box {
@@ -162,6 +184,20 @@
     font-weight: 600;
 }
 
+.landing1-text2 {
+    color: var(--dl-color-default-main);
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    font-size: 48px;
+    font-family: Quicksand;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.02;
+    margin-bottom: 20px;
+  }
+
+  
 /* Responsive styles */
 @media (max-width: 1200px) {
     .plan-box, .plan-recommended {
@@ -187,4 +223,23 @@
     .plan-action button {
         padding: 8px 16px; /* Reduce padding for smaller screens */
     }
+
+    .landing1-text2 {
+        color: var(--dl-color-default-main);
+        width: 80%;
+        height: auto;
+        font-size: 35px;
+        font-family: Quicksand;
+        font-weight: 600;
+        text-align: center;
+        line-height: 1.02;
+        margin-bottom: 20px;
+    }
+
+    .landing-logo3111{
+        width: 80%;
+        align-items: center;
+        padding-left: 50px;
+    }
+
 }

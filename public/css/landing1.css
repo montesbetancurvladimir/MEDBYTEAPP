@@ -41,19 +41,6 @@
   margin-bottom: 20px;
 }
 
-.landing1-text2 {
-  color: var(--dl-color-default-main);
-  width: 100%;
-  max-width: 1000px;
-  height: auto;
-  font-size: 48px;
-  font-family: Quicksand;
-  font-weight: 600;
-  text-align: center;
-  line-height: 1.02;
-  margin-bottom: 20px;
-}
-
 .landing1-find {
   display: flex;
   padding: 10px 20px;

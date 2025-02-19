@@ -1,0 +1,131 @@
+
+.container_empresas_pag2 {
+    background-color: #F2F4EA;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0;
+    padding: 20px; /* Añade padding al contenedor */
+    box-sizing: border-box;
+}
+
+.text-container_empresas {
+    max-width: 1200px; /* Ancho máximo de las columnas */
+    width: 100%;
+    text-align: left; /* Centra el texto */
+    margin: 20px 0; /* Añade margen superior e inferior */
+}
+.message-text-empresas {
+    font-size: 72px; /* Tamaño de la fuente más grande */
+    color: #5C937B;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1; /* Ajusta el espacio entre renglones */
+    padding-left: 180px; /* Relleno a la izquierda */
+    padding-top: 20px; /* Relleno arriba */
+}
+
+
+
+.custom-table-container {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Centra la tabla horizontalmente */
+}
+
+.custom-table {
+    width: 80%; /* Ajusta este valor según el tamaño deseado */
+    border-collapse: collapse;
+}
+
+.custom-table tr {
+    border-bottom: 2px solid #5C937B; /* Color de la línea verde y más gruesa */
+}
+
+.custom-table td {
+    padding: 12px 8px; /* Padding adicional arriba y abajo */
+    padding-left: 20px; /* Padding adicional a la izquierda */
+    padding-right: 20px; /* Padding adicional a la derecha */
+    text-align: left;
+    color: #5C937B; /* Color del texto verde */
+}
+
+.custom-table .number {
+    width: 10%;
+    font-size: 36px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.custom-table .name {
+    width: 30%;
+    font-size: 36px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.custom-table .description {
+    width: 60%;
+    font-size: 26px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Media Query para pantallas pequeñas (máximo 768px) */
+@media (max-width: 768px) {
+    .container_empresas_pag2 {
+        height: auto; /* Ajusta la altura automáticamente */
+        align-items: center; /* Centra los elementos */
+        padding: 10px;
+    }
+
+    .message-text-empresas {
+        font-size: 36px; /* Reduce el tamaño del texto */
+        padding-left: 0; /* Elimina el padding lateral */
+        padding-top: 10px;
+        text-align: center; /* Centra el texto */
+    }
+
+    .text-container_empresas {
+        text-align: center; /* Centra el texto */
+        margin: 10px 0;
+    }
+
+    .custom-table-container {
+        flex-direction: column; /* Coloca la tabla en una columna */
+        width: 80%;
+    }
+
+    .custom-table {
+        width: 100%; /* Ocupa todo el ancho de la pantalla */
+    }
+
+    .custom-table td {
+        font-size: 18px; /* Reduce el tamaño del texto */
+        padding: 8px; /* Reduce el padding */
+    }
+
+    .custom-table .number,
+    .custom-table .name,
+    .custom-table .description {
+        font-size: 18px; /* Ajusta el tamaño de todas las columnas */
+    }
+}
+
+/* Media Query para pantallas muy pequeñas (máximo 480px) */
+@media (max-width: 480px) {
+    .message-text-empresas {
+        font-size: 28px; /* Aún más pequeño para pantallas muy pequeñas */
+    }
+
+    .custom-table td {
+        font-size: 16px; /* Texto más pequeño */
+        padding: 6px;
+    }
+
+    .custom-table {
+        width: 100%;
+    }
+}

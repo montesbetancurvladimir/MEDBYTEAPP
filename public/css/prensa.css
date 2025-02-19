@@ -90,7 +90,7 @@
 
 .btn.btn-primary {
     font-size: 18px; /* Tamaño del texto */
-    border-radius: 60px; /* Hace que el botón sea redondo */
+    border-radius: 30px; /* Hace que el botón sea redondo */
     background-color: #5C937B; /* Color de fondo del botón */
     color: white; /* Color de texto del botón */
     border: none; /* Elimina el borde del botón */
@@ -103,4 +103,65 @@
 
 .btn.btn-primary:hover {
     background-color: #4A7F66; /* Cambia el color de fondo al pasar el mouse sobre el botón */
+}
+
+/* Media Queries para pantallas pequeñas (máx. 768px) */
+@media (max-width: 768px) {
+    .landing-container {
+        padding: 15px;
+    }
+
+    .landing-text {
+        font-size: 50px; /* Ajusta el tamaño del texto */
+    }
+
+    .landing-text07 {
+        font-size: 16px; /* Ajusta el tamaño del texto */
+    }
+
+    .blog-section {
+        flex-direction: column; /* Cambia la dirección del contenedor a columna */
+        gap: 20px; /* Añade un espacio entre los elementos */
+    }
+
+    .blog-box {
+        width: 80%; /* Hace que los cuadros ocupen todo el ancho */
+        margin: 10px 0; /* Ajusta el margen entre los cuadros */
+        align-items: center;
+        margin-left: 20px;
+    }
+
+    .blog-image-container img:first-child {
+        width: 100%; /* Ajusta el tamaño de la imagen */
+    }
+
+    .btn.btn-primary {
+        font-size: 12px; /* Ajusta el tamaño del texto en botones */
+        padding: 10px 30px; /* Ajusta el relleno del botón */
+        margin-left: 250px;
+    }
+
+    .landing-text07 {
+        width: 80%;
+        text-align: center;
+        align-items: center;
+        margin-left: 40px;
+        font-size: 16px; 
+    }
+}
+
+/* Media Queries para pantallas muy pequeñas (máx. 480px) */
+@media (max-width: 480px) {
+    .landing-text {
+        font-size: 40px; /* Ajusta el tamaño del texto */
+    }
+
+    .landing-text07 {
+        font-size: 18px; 
+    }
+
+    .btn.btn-primary {
+        font-size: 12px; /* Ajusta el tamaño del texto en botones */
+        padding: 8px 25px; /* Ajusta el relleno del botón */
+    }
 }

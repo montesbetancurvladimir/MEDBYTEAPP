@@ -4,6 +4,9 @@
     @include('layouts.head')
     <link rel="stylesheet" href="{{ asset('css/menu.css') }}">
     <link rel="stylesheet" href="{{ asset('css/empresas.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/empresas1.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/empresas2.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/empresas3.css') }}">
 </head>
 
 <body>
@@ -12,7 +15,7 @@
     <div class="message-container">
         <div class="text-container">
             <br>
-            <p class="message-text">Medbyte: Empresas</p><br>
+            <p class="message-text">Medbyte: Empresas</p><br><br>
             <p class="message-text-small">Previene posibles crisis en salud mental de tu comunidad mediante una red de apoyo automatizada.</p><br>
             <div class="image-container-scribble">
                 <div class="image-scribble">
@@ -28,7 +31,7 @@
         </div>
     </div>
 
-    {{-- Segunda página --}}
+    {{-- Segunda página     --}}
     <div class="container_empresas_pag2">
         <div class="text-container_empresas">
             <p class="message-text-empresas">¿Sabes cómo funciona<br> MedByte Care?</p>
@@ -60,6 +63,7 @@
         </div>
     </div>
 
+
     {{-- Tercer página --}}
     <div class="container_pagina3_empresas">
         <div class="employee-meter">
@@ -89,6 +93,7 @@
             </div>
         </div>
     </div>
+
 
     <script>
         // Obtener los elementos del rango y los spans donde se muestran los valores
@@ -123,6 +128,7 @@
         }
     </script>
     
+
     <a href="{{ route('survey.inicio') }}" class="menu-button_empresa special-button">Comienza gratis</a>
     <div class="message-container">
         <div class="text-container">
@@ -133,6 +139,9 @@
             </div>
         </div>
     </div>
+
+    <br><br><br>
+    <p>.</p>
 
 </body>
 </html>

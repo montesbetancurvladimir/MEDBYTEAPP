@@ -17,8 +17,8 @@
                 <span>Prensa</span>
                 <br />
             </span>
-            <span class="landing-text06">
-                <span class="landing-text07">Conoce como MedByte está transformando el panorama de la salud global</span>
+            <p class="landing-text07">
+                Conoce como MedByte está transformando el panorama de la salud global
             </span>
             
             <!-- New Blog Section -->
@@ -28,33 +28,30 @@
                         <img src="{{ asset('images/prensa/ejemplo.svg') }}" alt="Imagen del Blog">
                         <img src="{{ asset('images/prensa/forbes_logo.svg') }}" alt="Logo" class="logo-overlay">
                     </div>
-                    <h2>¿Por qué análisis de datos para mi entidad de salud?</h2>
-                    <p class="blog-description">Descubre cómo el análisis de datos puede transformar tu entidad de salud.</p>
-                    <button class="btn btn-primary">
+                    <h2>Colombiano crea software para predecir crisis de salud mental en trabajadores</h2>
+                    <a href="https://forbes.co/2022/10/16/actualidad/colombiano-crea-software-para-predecir-crisis-de-salud-mental-en-trabajadores" target="_blank" class="btn btn-primary">
                         Leer más <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>
-                    </button>
-                </div>
+                    </a>
+                </div>                
                 <div class="blog-box">
                     <div class="blog-image-container">
                         <img src="{{ asset('images/prensa/ejemplo.svg') }}" alt="Imagen del Blog">
-                        <img src="{{ asset('images/prensa/group.svg') }}" alt="Logo" class="logo-overlay">
+                        <img src="{{ asset('images/prensa/la_fm_logo.svg') }}" alt="Logo" class="logo-overlay">
                     </div>
-                    <h2>¿Cómo aumentar tu volumen de pacientes?</h2>
-                    <p class="blog-description">Descubre cómo el análisis de datos puede transformar tu entidad de salud.</p>
-                    <button class="btn btn-primary">
+                    <h2>Una solución digital creada por un colombiano y que es capaz de identificar la probabilidad de que una persona llegue a sufrir una crisis </h2>
+                    <a href="https://www.lafm.com.co/tecnologia/inteligencia-artificial-ayuda-a-predecir-la-ansiedad-el-estres-y-la-depresion" target="_blank" class="btn btn-primary">
                         Leer más <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>
-                    </button>
+                    </a>
                 </div>
                 <div class="blog-box">
                     <div class="blog-image-container">
                         <img src="{{ asset('images/prensa/ejemplo.svg') }}" alt="Imagen del Blog">
                         <img src="{{ asset('images/prensa/la_fm_logo.svg') }}" alt="Logo" class="logo-overlay">
                     </div>
-                    <h2>¿Cómo conservar y aumentar tus pacientes en la pandemia?</h2>
-                    <p class="blog-description">Descubre cómo el análisis de datos puede transformar tu entidad de salud.</p>
-                    <button class="btn btn-primary">
+                    <h2>Durante varios años los colombianos han enfrentado ineficiencias del sistema de salud, como demora en la asignación de citas médicas</h2>
+                    <a href="https://www.lafm.com.co/tecnologia/la-plataforma-que-ayuda-a-la-prestacion-y-atencion-de-los-servicios-de-salud-en-colombia" target="_blank" class="btn btn-primary">
                         Leer más <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>

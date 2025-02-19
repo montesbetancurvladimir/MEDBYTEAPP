@@ -1,6 +1,5 @@
 /* Estilos generales */
 
-
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
@@ -126,41 +125,52 @@ body {
     width: 80%;
     height: 1px;
     background-color: #5C937B;
-    margin: 0px auto; /* Añade un margen para asegurarse de que el divider esté centrado */
+    margin: 20px auto; /* Añade un margen para asegurarse de que el divider esté centrado */
     position: relative; /* Mantén el position relative */
 }
 
-/* Botón del menú hamburguesa */
-.hamburger-menu {
-    display: none; /* Oculto por defecto en pantallas grandes */
-    background: none;
-    border: none;
-    font-size: 24px;
-    color: #5C937B;
-    cursor: pointer;
-    padding: 10px;
-}
-
-
 /* Estilos responsivos */
+
+@media (max-width: 1024px) {
+    .header-container {
+        padding: 10px 20px;
+    }
+
+    .menu-buttons {
+        justify-content: center;
+    }
+
+    .menu-button,
+    .special-button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .menu-select {
+        padding: 10px 20px 10px 10px;
+        font-size: 16px;
+    }
+
+    .divider {
+        width: 90%;
+        margin: 20px auto;
+    }
+}
 @media (max-width: 768px) {
     .header-container {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        width: 90%; /* Asegura que el contenedor principal no se desborde */
-        padding: 0px;
     }
 
     .menu-buttons {
-        margin-top: 0;
+        margin-top: 0; /* Elimina el margen superior del contenedor */
         flex-direction: column;
-        gap: 0;
-        align-items: center;
-        width: 100%; /* Evita el desbordamiento horizontal */
+        gap: 0; /* Elimina cualquier espacio entre los elementos si es compatible */
+        align-items: center; /* Asegura que los botones estén centrados */
     }
-
-    /* Elimina márgenes y rellenos adicionales */
+    
+    /* Si los elementos hijos tienen márgenes, ajustarlos a 0 */
     .menu-buttons > * {
         margin: 0;
         padding: 0;
@@ -171,6 +181,7 @@ body {
         padding: 0;
         font-size: 14px;
         margin: 5px 0;
+
     }
 
     .menu-select {
@@ -180,59 +191,7 @@ body {
     }
 
     .divider {
-        width: 100%;
+        width: 95%;
+        margin: 20px auto; /* Asegura que el divider esté centrado y visible */
     }
-
-    /* Ajustar el logo para pantallas pequeñas */
-    .logo-container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%; /* Evita el desbordamiento */
-        padding: 0 10px; /* Ajusta los márgenes del logo */
-    }
-
-    .logo-container img {
-        max-width: 120px; /* Reduce el tamaño del logo en pantallas pequeñas */
-        height: auto;
-    }
-
-    /* Botón de hamburguesa */
-    .hamburger-menu {
-        display: block;
-        font-size: 30px; /* Ajusta el tamaño del botón de hamburguesa */
-        margin-left: 10px; /* Acerca el botón al logo */
-    }
-
-    .menu-buttons {
-        display: none; /* Menú oculto por defecto */
-        flex-direction: column;
-        top: 60px;
-        right: 10px;
-        background: white;
-        padding: 10px;
-        border: 1px solid #5C937B;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        z-index: 1000;
-        width: 100%; /* Evita que el menú se desborde */
-    }
-
-    .menu-buttons.active {
-        display: flex; /* Muestra el menú cuando está activo */
-    }
-
-    .top-line {
-        width: 100%; /* El ancho será igual al de la pantalla */
-        background-color: #5c937b;
-        color: white;
-        text-align: center;
-    }
-
-    .text_top_line{
-        width: 90%;
-        align-items: center;
-        padding-left: 20px;
-    }
-    
 }

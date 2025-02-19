@@ -26,6 +26,7 @@
     <div>
         <div class="landing-container">
             <div class="landing-landing">
+                <br><br>
                 <div class="landing-menu-items"></div>
                 <span class="landing_text_question">
                     <span> {{ $question->text }}</span>

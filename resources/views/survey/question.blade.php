@@ -31,13 +31,14 @@
 
         <div class="landing-container">
             <div class="landing-landing">
+                <br><br>
                 <div class="landing-menu-items"></div>
                 <span class="landing-text">
                     <span>¿Donde estás ubicad@?</span>
                     <br />
                 </span><br>
                 <span class="landing-text06">
-                    <span class="landing-text_intro_question">Te preguntamos para emparejarte con servicios en tu área</span>
+                    <span class="landing-text_intro_question">Te preguntamos para emparejarte <br> con servicios en tu área.</span>
                     <br>
                 </span><br><br>
                 <form method="POST" action="{{ route('survey.answer_cache') }}" class="form-container">

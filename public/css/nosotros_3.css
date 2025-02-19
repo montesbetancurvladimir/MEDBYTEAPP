@@ -1,0 +1,152 @@
+.container_pagina3 {
+    background-color: #F2F4EA;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column; /* Para que las columnas aparezcan debajo del texto */
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Ajusta el padding según sea necesario */
+}
+
+/* ojo see repite en la pagina 2*/
+.text-container_nosotros {
+    width: 100%;
+    text-align: center; /* Centra el texto */
+}
+
+.text-container_nosotros {
+    flex: 1;
+    padding-left: 100px; /* Ajusta el espacio para que empiece donde el logo */
+    box-sizing: border-box;
+}
+
+.message-text-page3_big {
+    font-size: 75px; /* Tamaño de la fuente más grande */
+    color: #5C937B;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    line-height: 1; /* Ajusta el espacio entre renglones */
+    font-weight: bold;
+}
+.message-text-page3_small {
+    font-size: 55px; /* Tamaño de la fuente más grande */
+    color: #5C937B;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 10px;
+    line-height: 1; /* Ajusta el espacio entre renglones */
+    font-weight: bold;
+    padding-top: 300px;
+}
+
+
+.columns-container_pag3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.columns-container_pag3 {
+    display: flex; /* Cambia a flex para mantener las columnas en una fila */
+    gap: 20px; /* Espacio entre las columnas */
+    margin-top: 0px;
+    font-family: 'Quicksand', sans-serif;
+    align-items: stretch; /* Todas las columnas tienen la misma altura */
+    justify-content: center; /* Centra las columnas horizontalmente */
+    padding-left: 40px; /* Añade padding a la izquierda */
+    padding-right: 40px; /* Añade padding a la derecha */
+}
+
+.column_pag3 {
+    padding: 10px;
+    background-color: #5C937B; /* Color de fondo */
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px; /* Bordes redondeados */
+    flex: 1; /* Hace que todas las columnas tengan la misma altura */
+    margin-bottom: 10px; /* Espacio entre cada elemento */
+    margin-left: 20px; /* Margen a la izquierda */
+    margin-right: 20px; /* Margen a la derecha */
+}
+
+.column_pag3 h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.column_pag3 p {
+    font-size: 30px;
+    margin-bottom: 40px; /* Ajusta el margen inferior para el texto */
+    flex-grow: 1; /* Permitir que los elementos se expandan */
+    flex-shrink: 0; /* Evitar que los elementos se hagan más pequeños */
+    flex-basis: 0; /* Permitir que los elementos se expandan */
+}
+
+
+.message-button{
+    border: 10px;
+    margin-bottom: 10px;
+    font-size: 25px; /* Reducir el tamaño del texto */
+}
+
+/* Estilos específicos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .container_pagina3 {
+        flex-direction: column;
+        padding: 10px;
+        width: 65%;
+    }
+
+    .message-text-page3_big {
+        margin-top: 80px;
+        font-size: 50px; /* Reducir el tamaño de la fuente */
+        padding-left: 20px; /* Reducir el relleno a la izquierda */
+        padding-top: 10px; /* Reducir el relleno arriba */
+    }
+
+    .message-text-page3_small {
+        font-size: 40px; /* Reducir el tamaño de la fuente */
+    }
+
+    .text-container_nosotros {
+        padding-left: 0; /* Eliminar relleno izquierdo en pantallas pequeñas */
+        text-align: center; /* Centrar el texto */
+    }
+
+    .columns-container_pag3 {
+        flex-direction: column; /* Apilar las columnas en pantallas pequeñas */
+        align-items: center; /* Centrar las columnas */
+        justify-content: center;
+        padding-left: 20px; /* Reducir el relleno a la izquierda */
+        padding-right: 20px; /* Reducir el relleno a la derecha */
+    }
+
+    .column_pag3 {
+        width: 100%; /* Hacer que las columnas ocupen todo el ancho disponible */
+        padding: 15px; /* Reducir el padding */
+        margin-bottom: 20px; /* Añadir espacio entre las columnas */
+        margin-left: 0; /* Eliminar margen izquierdo */
+        margin-right: 0; /* Eliminar margen derecho */
+    }
+
+    .column_pag3 h2 {
+        font-size: 28px; /* Reducir el tamaño de la fuente */
+    }
+
+    .column_pag3 p {
+        font-size: 20px; /* Reducir el tamaño del texto */
+    }
+
+    .columns-container_pag3{
+        width: 100%; /* Hacer que las líneas sean más pequeñas en pantallas pequeñas */
+    }
+
+    .message-button{
+        border: 10px;
+        margin-bottom: 10px;
+        font-size: 25px; /* Reducir el tamaño del texto */
+    }
+}

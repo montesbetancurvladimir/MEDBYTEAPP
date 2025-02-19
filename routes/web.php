@@ -5,11 +5,13 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SurveyController;
 use App\Http\Controllers\PageController;
 
-
+/*
 Route::get('/', function () {
-    //return view('welcome');
     return view('inicio');
 })->name('home');
+*/
+Route::get('/', [PageController::class, 'inicio'])->name('home');
+
 
 Route::get('/nosotros', [PageController::class, 'nosotros'])->name('page.nosotros');
 Route::get('/empresas', [PageController::class, 'empresas'])->name('page.empresas');
